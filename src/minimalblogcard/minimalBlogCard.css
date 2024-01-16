@@ -1,0 +1,84 @@
+/* Sora */
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+:root {
+    --fake-body: #FAFAF9;
+    --title: #20293A;
+    --tag-bg: #E6D6FC;
+    --tag-text-color: #883AE1;
+    --shadow: #E5EAF0;
+}
+
+/* fake body just for centre the div */
+#fakeBody {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--fake-body);
+}
+
+/* the card  */
+#cardContainer {
+    width: 380px;
+    min-height: 300px;
+    border-radius: 16px;
+    font-family: 'Sora';
+    background-color: #fff;
+    box-shadow: 6px 6px 20px var(--shadow);
+}
+
+#container-top {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 1em;
+}
+
+/* div with the image */
+#container-img {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+#container-tag {
+    font-size: 0.625rem;
+    color: var(--tag-text-color);
+    background-color: var(--tag-bg);
+    width: fit-content;
+    padding: 6px 16px;
+    border-radius: 16px;
+    font-weight: bold;
+}
+
+#container-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title {
+    color: var(--title);
+    font-weight: bold;
+    font-size: 1.125rem; /* 18px */
+}
+
+.description {
+    color: #8C909B;
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.5;
+}
+
+/* card footer */
+#container-footer {
+    padding: 20px;
+    border-top: 1px solid var(--shadow);
+    font-size: 0.75rem; /* 12px */
+    color: #757B87;
+}
